@@ -12,3 +12,71 @@ html{
 body{
   font-family:  "Roboto","Arial", sans-serif;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56 px;
+    padding:0px 15px ;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.left-section img{
+    width: 46%;
+    padding-left: 16px;
+}
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    margin-left:-9%;
+    margin-top: 10px;
+  }
+  .mid-section form
+  {
+    display: flex;
+    height: 40px;
+    width: 628px;
+  }
+  .mid-section input{
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+  }
+  .mid-section button{
+    width:64px;
+    border:1px solid #d3d3d3;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  .mid-section button:hover{
+    background-color: #f0f0f0;
+    border-color: #c6c6c6;
+  }
+
+ .mid-section .mic{
+    width: 40px;
+    height: 40px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+    cursor: pointer;
+  }
+
+  .right-section a{
+    padding-right: 18px;
+    text-decoration: none;
+    color:black;
+  }
