@@ -1,0 +1,174 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Raleway", sans-serif;
+}
+
+p {
+  margin: 24px 0;
+}
+
+/* Containers */
+
+.container {
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.header-container {
+  position: absolute;
+  width:100%;
+  margin-top: -200px;
+  transition: all .4s;
+}
+
+.header-container header {
+  margin-top: 200px;
+}
+
+.header-container.fixed {
+  position: fixed;
+  margin-top: 0px;
+  right:0;
+  left:0;
+  background:#fff;
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.5);
+}
+
+.header-container.fixed header {
+  margin-top: 0;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header.scrolled {
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header.scrolled .heading {
+  box-shadow: unset;
+  flex:1;
+}
+
+header.scrolled h1 {
+  font-size: 18px;
+  padding: 0;
+}
+
+header.scrolled .menu-items {
+  background:#fff;
+  flex:3;
+}
+
+.heading {
+  padding:24px;
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.5);
+  z-index:1;
+}
+
+.heading h1 {
+  padding: 0 24px;
+}
+
+/* Menu Items */
+
+.menu-items {
+  background:#eee;
+}
+
+.menu-items .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.menu-items ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu-items ul li {
+  padding: 0 24px;
+}
+
+.menu-items a {
+  color:black;
+  text-decoration: none;
+}
+
+.menu-items .container {
+  position: relative;
+}
+
+
+/* Search Box */
+
+.search-icon-desktop {
+  cursor: pointer;
+}
+
+.searchbox-desktop {
+  position: absolute;
+  right:0;
+  top: 67px;
+  opacity: 0;
+  pointer-events: none;
+  transform: all .4s;
+}
+
+.searchbox-desktop.active {
+  pointer-events: auto;
+  opacity: 0; 
+}
+
+.searchbox-desktop input[type="text"] {
+  height: 48px;
+  width:300px;
+  border:none;
+  border-bottom: 1px solid #eee;
+  padding: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.searchbox-desktop input[type="text"]:focus {
+  outline: none;
+}
+
+/* Main */
+
+main {
+  padding: 180px 100px 0 100px;
+  line-height: 2;
+}
+
+main img {
+  display: block;
+  width:100%;
+  margin:0 auto;
+}
+
+main h2 {
+  padding: 16px 0;
+}
+
+
+/* Hide Mobile Menu */
+
+.mobile-header,
+.mobile-menu-items,
+.searchbox-mobile {
+  display:none;
+}
