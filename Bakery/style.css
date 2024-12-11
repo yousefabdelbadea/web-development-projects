@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.clear-fix {
+  clear: both;
+}
+
+.header {
+  height: 100vh;
+  overflow: auto;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.header .content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header .content p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 41px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.header .content h1 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  line-height: 91px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-button button {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  width: 150px;
+  height: 60px;
+  border: 2px solid white;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero-button .btn1 {
+  margin-right: 20px;
+  background-color: rgb(90, 61, 61);
+}
+
+.hero-button .btn1:hover {
+  background-color: white;
+  color: black;
+}
+.hero-button .btn2:hover {
+  background-color: white;
+  color: black;
+}
+
+.header .navbar {
+  padding: 10px 0;
+}
+
+.header .navbar .logo {
+  float: left;
+}
+
+.header .navbar .menu-link {
+  float: right;
+}
+
+.header .navbar li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.header .navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: "Alegreya", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.header .navbar .logo a {
+  color: white;
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.about .about-content {
+  margin: 60px 0;
+}
+
+.about-content .item {
+  float: left;
+  width: 50%;
+}
+
+.about-content .item img {
+  width: 100%;
+}
+.about-content .item .item-img {
+  margin-right: 60px;
+}
+
+.about-content .item .description {
+  padding: 70px 0;
+  margin-left: 20px;
+}
+
+.about-content .item .description h2 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  color: rgb(48, 48, 48);
+}
+
+.about-content .item .description p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.about-content .item .list {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.location {
+  padding: 70px 0;
+  background-color: rgb(248, 248, 248);
+}
+
+.location .location-item {
+  float: left;
+  width: 50%;
+}
+
+.location .location-item .location-description h2 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  color: rgb(48, 48, 48);
+}
+
+.location .location-item .location-description p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.location .location-item .location-image {
+  margin-left: 50px;
+}
+
+.location .location-item .location-image img {
+  width: 100%;
+}
+
+.baking {
+  margin-top: 90px;
+}
+
+.baking .title-baking {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.baking .title-baking h2 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  color: rgb(48, 48, 48);
+}
+.baking .title-baking p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.baking .baking-item {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+
+.baking .baking-item .baking-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.baking .baking-item .baking-description h3 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  color: rgb(48, 48, 48);
+}
+
+.baking .baking-item .baking-description p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.contact {
+  margin-top: 80px;
+  padding: 80px 0;
+  background-color: rgb(248, 248, 248);
+}
+
+.contact .contact-item {
+  float: left;
+  width: 50%;
+}
+
+.contact .Contact-Information h2 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  color: rgb(48, 48, 48);
+}
+
+.contact .Contact-Information p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.contact .Contact-Information ul {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgb(104, 104, 104);
+}
+
+.end-section {
+  background-color: rgb(64, 61, 56);
+  padding: 50px 0;
+}
+
+.end-section .end-section-items h4 {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.end-section .end-section-items p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(150, 150, 150);
+}
+
+.end-section .end-section-items .item {
+  float: left;
+  width: 25%;
+}
+
+.end-section .end-section-items ul {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(150, 150, 150);
+}
+
+.end-section .end-section-items ul li {
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding: 10px 0;
+}
+
+.end-section .end-section-items .title {
+  margin-left: 26px;
+}
+

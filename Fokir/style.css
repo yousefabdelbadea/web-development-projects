@@ -1,0 +1,644 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+.container {
+  width: 68%;
+  margin: auto;
+}
+.clear-fix {
+  clear: both;
+}
+.aspect-ratio
+{
+  aspect-ratio: 16/9;
+}
+
+/*******HOme Section*******/
+.header {
+  height: 100vh;
+  background-image: url(./images/slider-02.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.header .background {
+  position: absolute;
+  background-color: black;
+  left: 0%;
+  top: 0%;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+.header .navbar {
+  padding: 20px 0;
+}
+
+.header .navbar .logo {
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ff305b;
+}
+.header .navbar .menu-links {
+  float: right;
+}
+
+.header .navbar .menu-links li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 15px;
+}
+
+.header .navbar .menu-links li a {
+  text-decoration: none;
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  letter-spacing: 0.5px;
+  transition: all 0.7s;
+}
+
+#home-icon {
+  color: #ff305b;
+}
+
+.header .navbar .menu-links li a:hover {
+  color: #ff305b;
+}
+
+.header .content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header .content .description {
+  padding: 50px;
+}
+
+.header .content span {
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.header .content h1 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header .content p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+/****end Header Section*****/
+
+/*******About Section*******/
+.about {
+  margin: 90px 0;
+  /*background-color: #ff305b;*/
+}
+
+.about .about-content {
+  padding: 0px 140px;
+}
+
+.item {
+  width: 50%;
+  float: left;
+}
+
+.about .main-img .image-border {
+  width: 360px;
+  height: 440px;
+  border: 8px solid #555555;
+  border-radius: 5px;
+  position: relative;
+}
+
+.about .main-img .image-border .image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+}
+
+.about .content .description span {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 22px;
+  color: #333;
+  padding-left: 13px;
+  display: inline-block;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.about .content .description span::before {
+  content: "";
+  width: 4px;
+  height: 23px;
+  background-color: #ff305b;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.about .content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999999;
+}
+
+.about .content .details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgb(51, 51, 51);
+}
+.about li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 20px;
+}
+
+.cv-buttons a {
+  background-color: #ff305b;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 1s;
+}
+.cv-buttons a:hover {
+  background-color: #ec2403;
+}
+
+/****End of About Section*****/
+
+/****Services Section********/
+
+.services {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 70px 0;
+}
+
+.services .container {
+  text-align: center;
+}
+
+.services .title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  color: rgb(51, 51, 51);
+}
+
+.services .title {
+  position: relative;
+  display: inline-block;
+}
+
+.services .title h2::before {
+  content: "";
+  width: 170px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 60px;
+  left: 27px;
+}
+
+.services .title h2::after {
+  content: "";
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  top: 55px;
+  left: 80px;
+  border-top: 1px solid #ff305b;
+  border-bottom: 1px solid #ff305b;
+}
+
+.services .services-list {
+  margin-top: 100px;
+}
+.services .services-list .item {
+  float: left;
+  width: 25%;
+  padding: 40px 15px;
+  text-align: center;
+  transition: all 1s;
+}
+.services .services-list .item:hover {
+  background-color: white;
+}
+
+.services .services-list .item h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 15px;
+}
+
+.services .services-list .item p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+}
+/****ENd of Services Section********/
+
+/****Portfolio Section********/
+.portfolio {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.portfolio .container {
+  text-align: center;
+}
+
+.portfolio .title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  color: rgb(51, 51, 51);
+}
+
+.portfolio .title {
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio .title h2::before {
+  content: "";
+  width: 170px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 60px;
+  left: 27px;
+}
+.portfolio .title h2::after {
+  content: "";
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  top: 55px;
+  left: 80px;
+  border-top: 1px solid #ff305b;
+  border-bottom: 1px solid #ff305b;
+}
+
+.portfolio .list-item {
+  margin-top: 70px;
+}
+
+.portfolio .list-item ul {
+  list-style: none;
+}
+
+.portfolio .list-item ul li {
+  display: inline-block;
+}
+.portfolio .list-item ul li a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 25px;
+  color: #333333;
+  padding: 3px 12px;
+}
+.portfolio .portfolio-list {
+  margin-top: 50px;
+}
+
+.portfolio .portfolio-list .item {
+  float: left;
+  width: 33.3333%;
+}
+
+.portfolio .portfolio-list .item .inner img {
+  width: 100%;
+}
+
+.portfolio .portfolio-list .item .inner {
+  padding: 20px;
+  position: relative;
+}
+
+.portfolio .portfolio-list .item .inner .background {
+  position: absolute;
+  background-color: black;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transition: all 0.7s 0s ease-in-out;
+}
+.portfolio .portfolio-list .item .inner .background:hover {
+  opacity: 0.4;
+}
+
+/****End of Portfolio Section*****/
+
+/****client Section********/
+
+.client {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.client .container {
+  text-align: center;
+}
+
+.client .title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  color: rgb(51, 51, 51);
+}
+
+.client .title {
+  position: relative;
+  display: inline-block;
+}
+
+.client .title h2::before {
+  content: "";
+  width: 160px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+}
+.client .title h2::after {
+  content: "";
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  top: 55px;
+  left: 120px;
+  border-top: 1px solid #ff305b;
+  border-bottom: 1px solid #ff305b;
+}
+
+.client .container .box-client {
+  background-color: rgb(241, 241, 241);
+  width: 60%;
+  margin: 70px auto;
+  text-align: left;
+  padding: 40px;
+  border-radius: 9px;
+  position: relative;
+}
+.client .container .box-client::before {
+  content: "";
+  border: 100px solid transparent;
+  border-color: #ff305b transparent transparent #ff305b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.client .box-client .client-img {
+  width: 30%;
+  text-align: right;
+  margin-top: 30px;
+  padding-right: 90px;
+  position: relative;
+  z-index: 2;
+}
+
+.client .box-client .content {
+  width: 70%;
+}
+.client .box-client .content h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 29px;
+  color: rgb(51, 51, 51);
+  margin: 0 0 10px;
+}
+
+.client .box-client .content h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgb(119, 119, 119);
+  margin: 0 0 10px;
+}
+
+.client .box-client .content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+  margin: 0 0 15px;
+  font-style: italic;
+}
+
+.client .box-client .client-img img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.client .box-client .item {
+  float: left;
+}
+
+/****ENd of client Section********/
+
+/****Blog Section********/
+.blog {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  padding: 100px 0;
+}
+
+.blog .container {
+  text-align: center;
+}
+
+.blog .title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  color: rgb(51, 51, 51);
+}
+
+.blog .title {
+  position: relative;
+  display: inline-block;
+}
+
+.blog .title h2::before {
+  content: "";
+  width: 160px;
+  height: 1px;
+  background-color: #ff305b;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+.blog .title h2::after {
+  content: "";
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  top: 55px;
+  left: 40px;
+  border-top: 1px solid #ff305b;
+  border-bottom: 1px solid #ff305b;
+}
+
+.blog .box-blog {
+  margin-top: 70px;
+
+}
+.blog .box-blog .item {
+  float: left;
+  width: 33.333%;
+  
+  text-align: left;
+  padding: 0 15px;
+}
+
+.blog .box-blog .item .blog-img img {
+  width: 100%;
+  display: block;
+}
+
+.blog .box-blog .blog-content {
+  padding: 12px;
+  background-color: white;
+}
+
+.blog span {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-family: "Rooto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+}
+
+.blog a {
+  text-decoration: none;
+}
+
+.blog h3 a {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+  color: #333;
+}
+
+.blog p {
+  font-family: "Rooto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+  margin: 15px 0;
+}
+
+.blog .box-blog .blog-content .read-more a {
+  font-family: "Rooto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+  margin: 15px 0;
+}
+
+.blog a:hover {
+  color: rgb(236, 36, 3);
+}
+
+.blog .box-blog .blog-content .read-more a:hover {
+  color: rgb(236, 36, 3);
+}
+
+
+/****End of Blog Section*****/
